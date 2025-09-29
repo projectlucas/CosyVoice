@@ -34,18 +34,18 @@ pyworld = "^0.3.5"
 rich = "13.7.1"
 soundfile = "0.12.1"
 tensorboard = "2.14.0"
-torch = "^2.7.0"
-torchaudio = "^2.7.0"
-transformers = "^4.53.3"
+torch = {version = "2.7.0", source = "torch_cu128"}
+torchaudio = { version = "2.7.0", source = "torch_cu128" }
+transformers = "*"
 uvicorn = "0.30.0"
 WeTextProcessing = "*"
 wget = "3.2"
 tqdm = "^4.67.1"
 openai-whisper = "*"
 matcha-tts = "*"
-tensorrt-cu12 = {version = "^10.13.0.35", platform = "linux", source = "tensorrt-cu12"}
-tensorrt-cu12-bindings = {version = "^10.13.0.35", platform = "linux", source = "tensorrt-cu12"}
-tensorrt-cu12-libs = {version = "^10.13.0.35", platform = "linux", source = "tensorrt-cu12"}
+tensorrt-cu12 = {version = "*", platform = "linux", source = "tensorrt-cu12"}
+tensorrt-cu12-bindings = {version = "*", platform = "linux", source = "tensorrt-cu12"}
+tensorrt-cu12-libs = {version = "*", platform = "linux", source = "tensorrt-cu12"}
 
 [[tool.poetry.source]]
 name = "torch_cu128"
